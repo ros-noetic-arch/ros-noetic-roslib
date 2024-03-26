@@ -6,7 +6,7 @@ url='https://wiki.ros.org/roslib'
 pkgname='ros-noetic-roslib'
 pkgver='1.15.8'
 arch=('i686' 'x86_64' 'aarch64' 'armv7h' 'armv6h')
-pkgrel=1
+pkgrel=2
 license=('BSD')
 
 ros_makedepends=(
@@ -32,9 +32,10 @@ depends=(
 	python-rospkg
 )
 
-_dir="ros-${pkgver}/core/roslib"
-source=("${pkgname}-${pkgver}.tar.gz"::"https://github.com/ros/ros/archive/${pkgver}.tar.gz")
-sha256sums=('2cece46697585e55db415c5ddb4be935641b70c8a220f761a8e551225f133e40')
+_commit="136e18e9dfda748a87b5ed197a36587f612c6e46"
+_dir="ros-${_commit}/core/roslib"
+source=("${pkgname}-${pkgver}.tar.gz"::"https://github.com/ros/ros/archive/${_commit}.tar.gz")
+sha256sums=('1a5214cb8453388a8017ba2cc1eec659a29f61c854c35aa75923cd466a12222d')
 
 build() {
 	# Use ROS environment variables.

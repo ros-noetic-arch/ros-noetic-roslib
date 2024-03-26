@@ -1,7 +1,7 @@
 pkgbase = ros-noetic-roslib
 	pkgdesc = ROS - Base dependencies and support libraries for ROS.
 	pkgver = 1.15.8
-	pkgrel = 1
+	pkgrel = 2
 	url = https://wiki.ros.org/roslib
 	arch = i686
 	arch = x86_64
@@ -18,7 +18,7 @@ pkgbase = ros-noetic-roslib
 	depends = ros-noetic-rospack
 	depends = ros-noetic-catkin
 	depends = python-rospkg
-	source = ros-noetic-roslib-1.15.8.tar.gz::https://github.com/ros/ros/archive/1.15.8.tar.gz
-	sha256sums = 2cece46697585e55db415c5ddb4be935641b70c8a220f761a8e551225f133e40
+	source = ros-noetic-roslib-1.15.8.tar.gz::https://github.com/ros/ros/archive/136e18e9dfda748a87b5ed197a36587f612c6e46.tar.gz
+	sha256sums = 1a5214cb8453388a8017ba2cc1eec659a29f61c854c35aa75923cd466a12222d
 
 pkgname = ros-noetic-roslib
